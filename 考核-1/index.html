@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>附近</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <script src="js/angular.min.js"></script>
+</head>
+<body data-ng-app='restaurantOnshow'>
+    <div class="ctn" data-ng-controller="documentsController">
+        <div id="state2">
+            <div class="sorry-pic">
+                <img src="img/sorry.png" alt="sorry" class="sorry-pic-small"/>
+                <p>当前城市服务还未开通</p>
+            </div>
+            <div class="recommend">
+                推荐附近城市的热门商家
+            </div>
+        </div>
+
+        <div id="state1">
+            <div class="restaurant-list">
+                <ul>
+                    <li data-ng-repeat="x in nearby">
+                        <div class="list">
+                            <img class="list-pic" src="{{x.imgUrl}}" alt="..."/>
+                            <div class="list-content">
+                                <div class="list-title">
+                                    <span class="name">{{x.title}}</span>
+                                    <img src="img/rec.png" alt="qiang" class="icon"/>
+                                    <img src="img/stu.png" alt="xue" class="icon"/>
+                                    <img src="img/cmpn.png" alt="pingpai" class="icon"/>
+                                </div>
+                                <div class="list-flex">
+                                    <div class="list-info">
+                                        <div class="list-average">
+                                            <img src="img/star.png" alt="star" class="icon-star"/>
+                                            <p>人均<span class="average">{{x.average}}</span>元</p>
+                                        </div>
+                                        <div class="list-people-1">
+                                            <img src="img/good.png" alt="good" class="icon-good"/>
+                                            <p><span class="friend">{{x.good}}</span>位朋友</p>
+                                            <span class="distance">{{x.distance}}</span>
+                                        </div>
+                                        <div class="list-people-2">
+                                            <p><span class="people">{{x.people}}</span>人已享</p>
+                                            <span class="distance">{{x.distance}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="list-discount">
+                                        <p><span class="discount">{{x.discount}}</span>折</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div id="add">加载更多</div>
+
+            </div>
+        </div>
+
+        <div id="state3">
+            <div class="sorry-ctn">
+                <img src="img/sorry-big.png" alt="sorry" class="sorry-pic-big"/>
+                <p>当前城市服务还未开通</p>
+            </div>
+        </div>
+
+        <div id="state4">
+            <div class="sorry-ctn">
+                <img src="img/sorry-big.png" alt="sorry" class="sorry-pic-big"/>
+                <p>没有找到你要的商家哦</p>
+            </div>
+        </div>
+
+        <div id="state5">
+            <div class="sorry-ctn">
+                <img src="img/sorry-big.png" alt="sorry" class="sorry-pic-big"/>
+                <p>抱歉，当前折扣周六周日不可用</p>
+                <a href="index.html"><div class="sorry-btn">继续买单</div></a>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+<script src="js/main.js"></script>
+</html>

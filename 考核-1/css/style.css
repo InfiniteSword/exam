@@ -1,0 +1,180 @@
+body{
+    min-width: 320px;
+}
+div,p,span,ul,li{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.restaurant-list{
+    padding-left: 15px;
+}
+.list{
+    padding: 10px 0;
+    border-bottom: 1px #cccccc solid;
+}
+.list-pic{
+    width: 80px;
+    height: 75px;
+    display: inline-block;
+    float: left;
+}
+.list-content{
+    margin-top: -7px;
+    margin-left: 90px;
+    height: 75px;
+}
+.list-title{
+    color: #000000;
+    font-size: 16px;
+    line-height: 1;
+    margin: 12px 0 6px 0;
+}
+.name{
+    display: inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    max-width: 150px;
+    text-overflow: ellipsis;
+}
+.list-title img{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.icon-star{
+    height: 14px;
+    vertical-align: middle;
+}
+.list-average{
+    font-size: 12px;
+    color: black;
+    line-height: 14px;
+    margin: 4px 0;
+}
+.list-average p{
+    display: inline-block;
+}
+.icon-good{
+    height: 12px;
+}
+.list-people-1 p,.list-people-2 p{
+    display: inline-block;
+}
+.list-people-1{
+    display: inline-block;
+    float: left;
+    margin: 4px 0;
+    color: #cccccc;
+    font-size: 12px;
+}
+.list-people-2{
+    display: none;
+    float: left;
+    margin: 4px 0;
+    color: #cccccc;
+    font-size: 12px;
+}
+.distance{
+    display: inline-block;
+    font-size: 12px;
+    color: #cccccc;
+    margin-left: 8px;
+}
+.list-discount{
+    color: #F85800;
+    display: block;
+    float: right;
+    margin-top: -15px;
+}
+.list-discount span{
+    font-size: 40px;
+    line-height: 1;
+}
+#add{
+    text-align: center;
+    line-height: 2;
+    color: #a5a5a5;
+}
+
+
+
+.sorry-pic{
+    height: 150px;
+    text-align: center;
+    color: #a5a5a5;
+    font-size: 14px;
+    background: #eeeeee;
+}
+.sorry-pic img{
+    margin-top: 37px;
+    margin-bottom: 10px;
+    width: 75px;
+    height: 55px;
+}
+.recommend{
+    border-top: 1px #cccccc solid;
+    border-bottom: 1px #cccccc solid;
+    color: #a5a5a5;
+    font-size: 14px;
+    line-height: 3;
+    padding-left: 20px;
+}
+
+.sorry-pic-big{
+    width: 135px;
+    height: 135px;
+    margin-bottom: 25px;
+}
+#state3,#state4,#state5{
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    overflow: hidden;
+    z-index: 9;
+}
+.sorry-ctn{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    color: #999999;
+    transform: translate(-50%, -50%);
+}
+.sorry-btn{
+    width: 90%;
+    height: 43px;
+    margin-top: 30px;
+    margin-left: 5%;
+    color: #ffffff;
+    background: #00aaee;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 43px;
+}
+#state2{
+    display: block;
+}
+#state3{
+    display: none;
+}
+#state4{
+    display: none;
+}
+#state5{
+    display: none;
+}
+
+
+
+
